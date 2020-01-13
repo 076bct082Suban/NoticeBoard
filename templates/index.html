@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    The Front Page of Pulchowk Campus
+{% endblock %}
+
+{% block body %}
+    <h1>The Front Page of Pulchowk Campus</h1>
+
+    <p>
+        A Place to get all the happening of Pulchowk Campus
+
+        Get today's events at <a href="{{ url_for('today_events') }}">Here</a>
+    </p>
+    
+{% endblock %}

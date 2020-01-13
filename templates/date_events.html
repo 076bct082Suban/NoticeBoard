@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    The Front Page of Pulchowk Campus
+{% endblock %}
+
+{% block body %}
+    {% for event in the_events %}
+        <h2>{{event.event_name}}</h2>
+            Some description
+        <p>
+            Venue: {{event.event_location}}<br>
+            Time: {{event.event_date_time.date()}}<br>
+            Organiser {{event.event_organiser}}<br>
+
+            Entry Fee :{{event.event_entry_fee}}<br>
+
+        </p>
+    {% endfor %}
+{% endblock %}
